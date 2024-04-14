@@ -12,12 +12,18 @@
         section {
             margin: 2em 1em;
             border-radius: 1em;
-            background-color: white;
+            background: linear-gradient(to bottom, rgba(128, 128, 128, 0.2), rgba(128, 128, 128, 0.05));
             box-shadow: 1%;
+            border: 5px rgba(0, 0, 0, 0.9)
+        }
+
+        .barder {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            border: 1px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-gray-100">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
@@ -100,7 +106,7 @@
     </script>
 
     <!-- About Section -->    
-    <section class="pt-10 pb-10  bg-gray-100" id="about">
+    <section class="pt-10 pb-10" id="about">
         <div class="flex flex-wrap items-center  justify-center  ">
             <div class="text-center font-semibold mb-2"> <!-- Adjusted mb value to reduce margin bottom -->
                 <h1 class="text-3xl">
@@ -113,7 +119,7 @@
             </div>
 
             <div class="flex flex-col sm:flex-col lg:flex-row xl:flex-row md:flex-row justify-center items-center container  ">
-                <div class="py-12 sm:py-12 md:py-6 rounded-2xl lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 bg-white z-30 mx-2">
+                <div class="py-12 sm:py-12 md:py-6 rounded-2xl lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 bg-white z-30 mx-2 barder">
                     <h1 class="text-gray-500 font-semibold text-xl ">Content</h1>
                     <div class="text-center py-4 px-7">
                         <h1 class="text-gray-700 text-4xl font-black">Strategy</h1>
@@ -132,7 +138,7 @@
                     </a>
                 </div>
 
-                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 rounded-3xl w-full sm:w-full md:w-30 bg-black transform scale-1 sm:scale-1 md:scale-105 lg:scale-105 xl:scale-105 z-40 shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl mx-2">
+                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 rounded-3xl barder w-full sm:w-full md:w-30 bg-black transform scale-1 sm:scale-1 md:scale-105 lg:scale-105 xl:scale-105 z-40 shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl mx-2">
                     <h1 class="text-purple-200 font-semibold text-xl ">Management</h1>
                     <div class="text-center py-4 px-7">
                         <h1 class="text-white text-4xl font-black">Profiles</h1>
@@ -152,7 +158,7 @@
                     </a>
                 </div>
 
-                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 rounded-2xl bg-white z-30 mx-2">
+                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 rounded-2xl bg-white z-30 mx-2 barder">
                     <h1 class="text-gray-500 font-semibold text-xl ">Insights</h1>
                     <div class="text-center py-4 px-7">
                         <h1 class="text-gray-700 text-4xl font-black">Trending</h1>
@@ -176,7 +182,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="pt-10 pb-10 pb-10 bg-gray-200" id="portfolio">
+    <section class="pt-10 pb-10 pb-10" id="portfolio">
         <div class="flex flex-wrap items-center  justify-center  ">
             <div class="text-center font-semibold mb-4"> <!-- Adjusted mb value to reduce margin bottom -->
                 <h1 class="text-3xl">
@@ -189,7 +195,7 @@
             </div>
 
             <div class="flex flex-col sm:flex-col lg:flex-row xl:flex-row md:flex-row justify-center items-center container">
-                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 rounded-2xl bg-white z-30 mx-2">
+                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 rounded-2xl bg-white z-30 mx-2 barder">
                     <h1 class="text-gray-500 font-semibold text-xl ">Youtube</h1>
                     <div class="text-center py-4 px-7">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256" style="margin: auto;">
@@ -215,7 +221,7 @@
                     </a>
                 </div>
 
-                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 rounded-3xl w-full sm:w-full md:w-30 bg-black transform scale-1 sm:scale-1 md:scale-105 lg:scale-105 xl:scale-105 z-40 shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl mx-2">
+                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 rounded-3xl barder w-full sm:w-full md:w-30 bg-black transform scale-1 sm:scale-1 md:scale-105 lg:scale-105 xl:scale-105 z-40 shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl mx-2">
                     <h1 class="text-purple-200 font-semibold text-xl ">Twitter</h1>
                     <div class="text-center py-4 px-7">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256" style="margin: auto;">
@@ -242,7 +248,7 @@
                     </a>
                 </div>
 
-                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 rounded-2xl bg-white z-30 mx-2">
+                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 rounded-2xl barder bg-white z-30 mx-2 barder">
                     <h1 class="text-gray-500 font-semibold text-xl ">LinkedIn</h1>
                     <div class="text-center py-4 px-7">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256" style="margin: auto;">
@@ -279,7 +285,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="pt-10 pb-10 pb-10 bg-gray-200" id="services">
+    <section class="pt-10 pb-10 pb-10" id="services">
         <div class="flex flex-wrap items-center  justify-center  ">
             <div class="text-center font-semibold mb-4"> <!-- Adjusted mb value to reduce margin bottom -->
                 <h1 class="text-3xl">
@@ -292,7 +298,7 @@
             </div>
 
             <div class="flex flex-col sm:flex-col lg:flex-row xl:flex-row md:flex-row justify-center items-center container">
-                <div class="py-12 sm:py-12 md:py-6 rounded-2xl lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 bg-white z-30 mx-2">
+                <div class="py-12 barder sm:py-12 md:py-6 rounded-2xl lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 bg-white z-30 mx-2">
                     <h1 class="text-gray-500 font-semibold text-xl ">Individual</h1>
                     <div class="text-center py-4 px-7">
                         <h1 class="text-gray-700 text-4xl font-black">₹1999</h1>
@@ -312,7 +318,7 @@
                     </a>
                 </div>
 
-                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 rounded-3xl w-full sm:w-full md:w-30 bg-black transform scale-1 sm:scale-1 md:scale-105 lg:scale-105 xl:scale-105 z-40 shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl mx-2">
+                <div class="py-12 barder sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 rounded-3xl w-full sm:w-full md:w-30 bg-black transform scale-1 sm:scale-1 md:scale-105 lg:scale-105 xl:scale-105 z-40 shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl mx-2">
                     <h1 class="text-purple-200 font-semibold text-xl ">Creator</h1>
                     <div class="text-center py-4 px-7">
                         <h1 class="text-white text-4xl font-black">₹4999</h1>
@@ -333,7 +339,7 @@
                     </a>
                 </div>
 
-                <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 rounded-2xl bg-white z-30 mx-2">
+                <div class="py-12 barder sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full sm:w-full md:w-30 rounded-2xl bg-white z-30 mx-2">
                     <h1 class="text-gray-500 font-semibold text-xl ">Enterprise</h1>
                     <div class="text-center py-4 px-7">
                         <h1 class="text-gray-700 text-4xl font-black">₹9999</h1>
