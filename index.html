@@ -48,7 +48,7 @@
         <div class="max-w-7xl mx-auto pd-1em">
             <div style="display: flex; flex-direction: row;">
                 <!-- Message Information -->
-                <div id="text" class="py-12 pr-2 pl-2 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 mx-2 rounded-3xl w-full sm:w-full md:w-30 bg-black bg-opacity-100 shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl mx-2" style="width: 50%; height: auto;">
+                <div id="text" class="py-12 pr-2 pl-2 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 mx-2 rounded-3xl w-full sm:w-full md:w-30 bg-black bg-opacity-100 shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl mx-2" style="width: 100%; height: auto;">
                     <h1 class="text-purple-200 font-semibold text-xl ">SaraImpact</h1>
                     <header>
                         <div class="text-center py-4 px-7">
@@ -74,7 +74,7 @@
                 </div>
 
                 <!-- Image -->
-                <div id="images" class="mx-auto" style="width: 40%; min-height:100%; vertical-align: middle;">
+                <div id="images" class="mx-auto">
 
                 </div>
             </div>
@@ -84,16 +84,17 @@
     <script>
         images = ['organic.png']
         // , 'platforms.jpeg', 'organic.png'];
-
+        // style="width: 40%; min-height:100%; vertical-align: middle;"
         const textBox = document.getElementById('text');
         const imgBox  = document.getElementById('images');
         let i = 0;
-        setInterval(function() {
+        // setInterval(function() {
             // document.getElementById('heroSection').style =`background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.7)), url(${images[i]}) center/cover no-repeat;" class="py-20"`;
 
             if (window.innerWidth > 1.1 * window.innerHeight) {
                 textBox.style.width  = '60%';
                 imgBox.classList.remove('hidden');
+                imgBox.style = "width: 40%; min-height:100%; vertical-align: middle;";
                 imgBox.innerHTML = `<img src="${images[i]}" class="rounded-3xl h-full" alt="representational image" style="object-fit: cover;">`
                 let height = textBox.offsetHeight; 
                 document.getElementById('image').style.height = height + "px";
@@ -102,8 +103,8 @@
                 textBox.style.width = '100%';
                 imgBox.classList.add('hidden');
             }
-            i = (i + 1) % images.length;
-        }, 3000)
+        //     i = (i + 1) % images.length;
+        // }, 3000)
     </script>
 
     <!-- About Section -->    
