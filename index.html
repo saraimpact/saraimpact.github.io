@@ -92,11 +92,11 @@
             // document.getElementById('heroSection').style =`background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.7)), url(${images[i]}) center/cover no-repeat;" class="py-20"`;
 
             if (window.innerWidth > 1.1 * window.innerHeight) {
+                textBox.style.width  = '60%';
                 imgBox.classList.remove('hidden');
                 imgBox.style = "width: 40%; min-height:100%; vertical-align: middle;";
                 imgBox.innerHTML = `<img src="${images[i]}" class="rounded-3xl h-full" alt="representational image" style="object-fit: cover;">`
                 let height = textBox.offsetHeight; 
-                textBox.style.width  = '60%';
                 document.getElementById('image').style.height = height + "px";
             }
             else {
